@@ -68,6 +68,10 @@
 
     let currentGuessNumber = 0;
 
+    restartButton.addEventListener('click', function(e){
+       location.reload()
+    });
+
     submitButton.addEventListener('click', function(e){
     let guess = textBox.value;
     if(guess.length !== 5){
